@@ -18,8 +18,10 @@ This is simple type with start/end dates.
 This example of the form uses python-dateutil http://labix.org/python-dateutil/
 <pre>
 <code>
+from datetime import date
 from dateutil.relativedelta import relativedelta
 from django import forms
+from apps.daterangepicker.fields import DateRangeField, DateRangeValue
 
 DATE_RANGES=((date.today() - relativedelta(days=+7),
               date.today(),
