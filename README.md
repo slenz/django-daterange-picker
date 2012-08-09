@@ -9,7 +9,7 @@ DateRangeField is not designed to be saved in the database. Its only for using i
 DateRangeField have attributes:
 * _date_ranges_ - list/tuple. Defines selectable date ranges
 * _allow_custom_ - boolean. If allow_custom==true, the custom date can be selected.
-* _initial_ - get initital start/end date as DateRangeValue
+* _initial_ - DateRangeValue. Get initital start/end date as DateRangeValue
 
 After the form get validated the date range field will contain DateRangeValue. 
 This is simple type with start/end dates.
